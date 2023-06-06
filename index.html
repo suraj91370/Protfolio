@@ -45,61 +45,92 @@
                         resume keywords that can emphasize your skills and technical proficiencies and help your resume
                         impress hiring managers.</p>
 
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">skills </p>
-                            <p class="tab-links" onclick="opentab('Experience')">Experience </p>
-                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">skills </p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience </p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
 
-                        </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>Software/IT Support</span><br>Designing WebSite/Web Application Interface. </li>
-                                <li><span>Jsp/Servlet</span><br>Working on Jsp Servlet.</li>
-                                <li><span>Spring-Boot</span><br>Create A Rest Api from Spring boot. </li>
-                                <li><span>Core Java</span><br>I am also a knowledge of Java. </li>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Software/IT Support</span><br>Designing WebSite/Web Application Interface. </li>
+                            <li><span>Jsp/Servlet</span><br>Working on Jsp Servlet.</li>
+                            <li><span>Spring-Boot</span><br>Create A Rest Api from Spring boot. </li>
+                            <li><span>Core Java</span><br>I am also a knowledge of Java. </li>
 
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>2023- present</span><br>Web Developer. </li>
-                                <li><span>12/2021-11/2022</span><br>SOftware Developer.</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>2021</span><br> Java Certification Course.</li>
-                                <li><span>2016-2019</span><br>Complete graduation of Bsc-IT. </li>
-                                <li><span>2015-2016</span><br>H.S.C Passout</li>
-                                <li><span>2013-2014</span><br>S.S.C Passout. </li>
-                                
-                            </ul>
-                        </div>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023- present</span><br>Web Developer. </li>
+                            <li><span>12/2021-11/2022</span><br>SOftware Developer.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br> Java Certification Course.</li>
+                            <li><span>2016-2019</span><br>Complete graduation of Bsc-IT. </li>
+                            <li><span>2015-2016</span><br>H.S.C Passout</li>
+                            <li><span>2013-2014</span><br>S.S.C Passout. </li>
+
+                        </ul>
+                    </div>
                 </div>
             </div>
 
         </div>
 
     </div>
+    <!-- ----------------------service ------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <d iv class="services-list">
+                <div>
+                    <h2>Web Design</h2>
+                    <p>
+                        Web designing is the process of planning, conceptualizing, and implementing the plan for
+                        designing a website in a way that is functional and offers a good user experience.
+            
+                    </p>
+                    <a href="#">lear More</a>
+                </div>
+                <div>
+                    <h2>Software Developer</h2>
+                    <p>
+                        Web designing is the process of planning, conceptualizing, and implementing the plan for
+                        designing a website in a way that is functional and offers a good user experience.
+                    </p>
+                    <a href="#">lear More</a>
+                </div>
+                <div>
+                    <h2>Java Developer</h2>
+                    <p>
+                        Web designing is the process of planning, conceptualizing, and implementing the plan for
+                        designing a website in a way that is functional and offers a good user experience.
+                    </p>
+                    <a href="#">lear More</a>
+                </div>
 
+            </d>
+                </div>
+
+    </div>
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
 
-        function opentab(tabname)
-        {
-            for(tablink of tablinks)
-            {
+        function opentab(tabname) {
+            for (tablink of tablinks) {
                 tablink.classList.remove("active-link");
             }
-            for(tabcontent of tabcontents)
-            {
+            for (tabcontent of tabcontents) {
                 tabcontent.classList.remove("active-tab");
             }
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
-</script>
+    </script>
 </body>
 
 </html>
